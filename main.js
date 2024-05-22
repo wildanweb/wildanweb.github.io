@@ -41,8 +41,7 @@ function scrollHeader()
 window.addEventListener("scroll", scrollHeader)
 
 /*=============== TESTIMONIAL SWIPER ===============*/
-var Swiper = new 
-  swiper (".testimonial-wrapper", {
+var swiper = new Swiper(".testimonial-wrapper", {
     spaceBetween: 30,
     loop: 'true',
 
@@ -51,7 +50,6 @@ var Swiper = new
       clickable: true,
     },
   });
-
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
