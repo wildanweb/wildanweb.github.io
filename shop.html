@@ -93,15 +93,21 @@
 				<div class="panel-body">
 				    <div class="home-header">
 				        <div>
-				            <div class="home-header__subheading">Student</div>
-				            <div class="home-header__heading">Paket Cheap Hosting</div>
+				            <div class="auto" style="font-size:30px;"><strong>Student</strong></div>
+				            <div class="home-header__heading"style="font-size:15px;">Paket Cheap Hosting</div>
 				        </div>
 				        
 				    </div>
 
-					<p>
-					    
-				  		</p><p><span style="font-size:14px;"><strong><span style="color:rgb(13,253,69);">Rp 8.500/bulan</span></strong></span></p><p><span style="font-size:14px;">1 Domain<br>
+<p style="display: none;">
+    <span style="font-size:14px;">
+        <strong>
+            <span class="bharga" style="color:rgb(13,253,69);">Rp 8.000</span>
+        </strong>
+    </span>
+</p>			
+<p><span style="font-size:14px;"><strong><span style="color:rgb(13,253,69);">Rp 8.000/bulan</span></strong></span></p>
+<p><span style="font-size:14px;">1 Domain<br>
 
 1 GB SSD Storage<br>
 
@@ -117,8 +123,7 @@ Free SSL<br>
 
 Softaculous Installer<br>
 
-<a class="button button--primary" style="margin-top: 8px" href="https://wa.me/6287840530026">Click To Buy</a>
-
+<a id="waLink" class="button button--primary" style="margin-top: 8px" href="#">Click To Buy</a>
 				
 			
 			
@@ -130,15 +135,21 @@ Softaculous Installer<br>
 				<div class="panel-body">
 				    <div class="home-header">
 				        <div>
-				            <div class="home-header__subheading">Competent</div>
-				            <div class="home-header__heading">Paket Cheap Hosting</div>
+				            <div class="auto" style="font-size:30px;"><strong>Plumber</strong></div>
+				            <div class="home-header__heading"style="font-size:15px;">Paket Cheap Hosting</div>
 				        </div>
 				        
 				    </div>
 
-					<p>
-					    
-				  		</p><p><span style="font-size:14px;"><strong><span style="color:rgb(13,253,69);">Rp 10.000/bulan</span></strong></span></p><p><span style="font-size:14px;">1 Domain<br>
+<p style="display: none;">
+    <span style="font-size:14px;">
+        <strong>
+            <span class="bharga" style="color:rgb(13,253,69);">Rp 10.000</span>
+        </strong>
+    </span>
+</p>			
+<p><span style="font-size:14px;"><strong><span style="color:rgb(13,253,69);">Rp 10.000/bulan</span></strong></span></p>
+<p><span style="font-size:14px;">1 Domain<br>
 
 2 GB SSD Storage<br>
 
@@ -154,7 +165,7 @@ Free SSL<br>
 
 Softaculous Installer<br>
 
-<a class="button button--primary" style="margin-top: 8px" href="https://wa.me/6287840530026">Click To Buy</a>
+<a id="waLink" class="button button--primary" style="margin-top: 8px" href="#">Click To Buy</a>
 
 				
 			
@@ -167,40 +178,60 @@ Softaculous Installer<br>
 				<div class="panel-body">
 				    <div class="home-header">
 				        <div>
-				            <div class="home-header__subheading">Expert</div>
-				            <div class="home-header__heading">Paket Cheap Hosting</div>
+				            <div class="auto" style="font-size:30px;"><strong>Time Master</strong></div>
+				            <div class="home-header__heading"style="font-size:15px;">Paket Cheap Hosting</div>
 				        </div>
 				        
 				    </div>
 
-					<p>
-					    
-				  		</p><p><span style="font-size:14px;"><strong><span style="color:rgb(13,253,69);">Rp 15.000/bulan</span></strong></span></p><p><span style="font-size:14px;">2 Domain<br>
-
+<p style="display: none;">
+    <span style="font-size:14px;">
+        <strong>
+            <span class="bharga" style="color:rgb(13,253,69);">Rp 15.000</span>
+        </strong>
+    </span>
+</p>			
+<p><span style="font-size:14px;"><strong><span style="color:rgb(13,253,69);">Rp 15.000/bulan</span></strong></span></p>
+<p><span style="font-size:14px;">2 Domain<br>
 5 GB SSD Storage<br>
-
 Unlimited Bandwidth<br>
-
-
 Unlimited Email Accounts<br>
-
-
 Unlimited Mysql Database<br>
-
 Free SSL<br>
-
 SSH/Terminal Access<br>
+Softaculous Installer<br></span></p>
 
-Softaculous Installer<br>
+<a id="waLink" class="button button--primary" style="margin-top: 8px" href="#">Click To Buy</a>
 
-<a class="button button--primary" style="margin-top: 8px" href="https://wa.me/6287840530026">Click To Buy</a>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var tanggalSekarang = new Date();
+        var tanggal = tanggalSekarang.getDate();
+        var bulan = tanggalSekarang.getMonth() + 1; // Bulan dimulai dari 0
+        var tahun = tanggalSekarang.getFullYear();
 
-				
-			
-			
-		</div>
-	</div>
-    
-    
-    
-    
+        // Menambahkan 0 di depan angka untuk tanggal dan bulan jika kurang dari 10
+        tanggal = tanggal < 10 ? '0' + tanggal : tanggal;
+        bulan = bulan < 10 ? '0' + bulan : bulan;
+
+        var tanggalLengkap = tanggal + "-" + bulan + "-" + tahun;
+
+        // Mengambil nama produk dari elemen dengan class 'auto'
+        
+        var HargaBarang= document.querySelector('.bharga').innerText;
+        
+        var namaProduk = document.querySelector('.auto').innerText;
+
+        // Nomor WhatsApp dan pesan
+        var nomorWhatsApp = "6287840530026";
+        var pesan = "Nama Produk: " + namaProduk + ".\n\n" + 
+                    "Total Pembayaran: " + HargaBarang + ".\n" + 
+                    "Tanggal: " + tanggalLengkap;
+        
+        // Buat link WhatsApp dengan pesan
+        var waLink = "https://wa.me/" + nomorWhatsApp + "?text=" + encodeURIComponent(pesan);
+        
+        // Pasang link ke elemen <a>
+        document.getElementById("waLink").setAttribute("href", waLink);
+    });
+</script>
